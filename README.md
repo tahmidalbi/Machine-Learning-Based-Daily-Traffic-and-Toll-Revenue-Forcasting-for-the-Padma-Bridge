@@ -2,8 +2,6 @@
 
 An end-to-end machine learning and econometric study of daily road traffic and toll revenue on Bangladesh's Padma Bridge. The project combines one-day-ahead forecasting, explainable machine learning, corridor-level time-series analysis, a railway intervention study, and a district-level nighttime-light analysis in one reproducible Python pipeline.
 
-![Padma Bridge traffic forecasts](</C:/Users/albit/Downloads/Machine Learning Project/padma_bridge_ml_complete/outputs/figures/traffic_actual_vs_predicted.png>)
-
 ## Project overview
 
 The study addresses five related questions:
@@ -51,8 +49,6 @@ Performance is weaker during unusual demand periods. For example, the traffic Ra
 - Padma and Jamuna log traffic changes show statistically strong bidirectional Granger-predictive relationships. This indicates temporal predictive information, not physical causation.
 - The railway interrupted time-series model estimates no statistically significant immediate level change (-3.37%, p=0.460), but a negative post-intervention trend change (-0.0367% per day, p=0.005). This is an adjusted association, not a causal estimate.
 - The nighttime-light DiD coefficient is -0.151 (p=0.034), but the pre-trend interaction is also significant (p=0.010). Because the parallel-trends assumption is questionable, this result should be treated as descriptive rather than causal.
-
-![Padma Bridge toll revenue forecasts](</C:/Users/albit/Downloads/Machine Learning Project/padma_bridge_ml_complete/outputs/figures/toll_actual_vs_predicted.png>)
 
 ## Data
 
@@ -261,8 +257,6 @@ The most useful artifacts are:
 | `outputs/reports/padma_jamuna_summary.json` | VAR selection and minimum Granger p-values |
 | `outputs/reports/railway_its_summary.json` | Railway level/trend estimates and caveat |
 | `outputs/reports/ntl_did_summary.json` | DiD estimate, confidence interval, and pre-trend warning |
-
-![Random Forest traffic permutation importance](</C:/Users/albit/Downloads/Machine Learning Project/padma_bridge_ml_complete/outputs/figures/traffic_rf_permutation_importance.png>)
 
 ## Reproducibility and limitations
 
