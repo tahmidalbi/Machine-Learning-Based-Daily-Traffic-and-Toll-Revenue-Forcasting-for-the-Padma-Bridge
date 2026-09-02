@@ -1,0 +1,9 @@
+Put exactly these three CSV files in this directory:
+
+1. padma_toll_report_with_holidays_weather.csv
+2. jamuna_toll_report.csv
+3. bangladesh_ntl_2019_2025_padma_groups.csv
+
+Do not concatenate the other CSV files. They are raw/intermediate duplicates of
+information already contained in these three richest files.
+
