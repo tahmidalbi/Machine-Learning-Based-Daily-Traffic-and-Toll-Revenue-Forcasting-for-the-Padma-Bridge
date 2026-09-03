@@ -1,0 +1,17 @@
+{
+  "transformation": "log1p then first difference, used to reduce spurious regression from shared trends",
+  "var_lag_selected_by_aic": 14,
+  "smallest_granger_p_values": [
+    {
+      "cause": "jamuna_total_traffic",
+      "target": "padma_total_traffic",
+      "p_value": 1.0578667354237625e-12
+    },
+    {
+      "cause": "padma_total_traffic",
+      "target": "jamuna_total_traffic",
+      "p_value": 1.2888754381173892e-12
+    }
+  ],
+  "interpretation_limit": "Granger causality is predictive temporal dependence, not physical causation."
+}

@@ -1,0 +1,8 @@
+{
+  "commercial_service_start": "2023-11-01",
+  "estimated_immediate_percent_change": -3.373721996556367,
+  "estimated_additional_daily_trend_percent": -0.03670336362832094,
+  "immediate_change_p_value": 0.4600624870537666,
+  "trend_change_p_value": 0.005154506527842891,
+  "interpretation_limit": "This is an adjusted temporal association, not proof that rail service caused the change."
+}
