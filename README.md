@@ -16,12 +16,13 @@ A machine learning study of daily road traffic and toll revenue on Bangladesh's 
 
 | Folder | What it does |
 |---|---|
-| [`Machine-Learning-Based-Daily-Traffic-and-Toll-Revenue-Forcasting-for-the-Padma-Bridge-main/`](./Machine-Learning-Based-Daily-Traffic-and-Toll-Revenue-Forcasting-for-the-Padma-Bridge-main) | The core project. An end-to-end, reproducible pipeline that forecasts **next-day** total traffic and toll revenue and runs the full econometric impact study (weather/holiday/Eid effects, Padma–Jamuna Granger analysis, railway intervention analysis, nighttime-light difference-in-differences). See its own README for full methodology, results tables, and usage. |
-| [`padma_bridge_ml_complete/`](./padma_bridge_ml_complete) | A packaged/standalone copy of the core project (same pipeline, plus raw CSV inputs and a Colab notebook), intended as a self-contained, ready-to-run bundle — e.g. for uploading to Google Drive/Colab. |
+| [`padma_bridge_ml(feature-engineered version)/`](./padma_bridge_ml(feature-engineered%20version)) | The core project. An end-to-end, reproducible pipeline that forecasts **next-day** total traffic and toll revenue and runs the full econometric impact study (weather/holiday/Eid effects, Padma–Jamuna Granger analysis, railway intervention analysis, nighttime-light difference-in-differences). Self-contained with raw CSV inputs and a Colab notebook. See its own README for full methodology, results tables, and usage. |
 | [`multihorizon_forecasting/`](./multihorizon_forecasting) | Extends the forecasting task from one day ahead to a **1–30 day horizon**, training global direct multi-horizon models (Random Forest, XGBoost, CatBoost, Residual MLP) with origin-date-safe features so no future information leaks into any horizon. |
 | [`directional_forecasting/`](./directional_forecasting) | Splits total traffic/toll into **direction-specific** series (Mawa-bound and Jajira-bound) and trains separate models per direction and per target, to test whether directional detail improves on aggregate forecasts. |
 | [`Padma_TimeSeries-master/`](./Padma_TimeSeries-master) | A **sequence-model** (PyTorch, windowed/raw time-series) approach to the same forecasting problem, independent of the tabular scikit-learn/XGBoost pipeline used elsewhere — includes architecture tuning, window-size sweeps, and multi-seed ensembling experiments. |
 | `*.pdf` files at the root | Written report deliverables (project report and per-section "portion work" write-ups) that document the methodology and findings behind the directional and multi-horizon extensions. |
+
+`Machine-Learning-Based-Daily-Traffic-and-Toll-Revenue-Forcasting-for-the-Padma-Bridge-main/` also exists locally but is **not tracked in git** (see `.gitignore`) — it is an earlier duplicate of `padma_bridge_ml(feature-engineered version)/` with identical source code, kept around locally but superseded by it.
 
 ## Data
 
@@ -51,7 +52,7 @@ Each sub-project is self-contained with its own `requirements.txt` and entry-poi
 
 ```bash
 # Core next-day forecasting + impact analysis pipeline
-cd Machine-Learning-Based-Daily-Traffic-and-Toll-Revenue-Forcasting-for-the-Padma-Bridge-main
+cd "padma_bridge_ml(feature-engineered version)"
 python -m venv .venv && .venv\Scripts\Activate.ps1   # Windows PowerShell
 pip install -r requirements.txt
 python run_all.py --quick   # smoke test
