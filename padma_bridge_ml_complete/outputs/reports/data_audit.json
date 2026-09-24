@@ -1,0 +1,107 @@
+{
+  "selected_source_files": [
+    "padma_toll_report_with_holidays_weather.csv",
+    "jamuna_toll_report.csv",
+    "bangladesh_ntl_2019_2025_padma_groups.csv"
+  ],
+  "why_only_three": "These are the richest non-duplicative inputs. Other supplied CSVs are subsets or intermediate duplicates.",
+  "padma": {
+    "dataset": "Padma",
+    "rows": 1520,
+    "date_min": "2022-06-26",
+    "date_max": "2026-08-24",
+    "duplicate_dates": 0,
+    "missing_dates": [
+      "2026-03-31"
+    ],
+    "traffic_total_mismatch_count": 2,
+    "traffic_total_mismatch_dates": [
+      "2022-09-10",
+      "2025-09-17"
+    ],
+    "cash_total_mismatch_count": 10,
+    "cash_total_mismatch_dates": [
+      "2022-07-22",
+      "2022-07-27",
+      "2022-08-13",
+      "2022-08-19",
+      "2022-10-22",
+      "2022-10-24",
+      "2023-05-17",
+      "2023-07-26",
+      "2023-08-02",
+      "2024-11-01"
+    ],
+    "policy": "Totals are preserved as reported; inconsistencies are flagged, never silently rewritten."
+  },
+  "jamuna": {
+    "dataset": "Jamuna",
+    "rows": 1515,
+    "date_min": "2022-07-01",
+    "date_max": "2026-08-24",
+    "duplicate_dates": 0,
+    "missing_dates": [
+      "2025-09-17"
+    ],
+    "traffic_total_mismatch_count": 8,
+    "traffic_total_mismatch_dates": [
+      "2022-07-08",
+      "2022-07-09",
+      "2022-08-22",
+      "2022-09-26",
+      "2023-01-20",
+      "2023-05-03",
+      "2024-11-19",
+      "2024-12-02"
+    ],
+    "cash_total_mismatch_count": 8,
+    "cash_total_mismatch_dates": [
+      "2022-10-22",
+      "2022-11-05",
+      "2024-04-06",
+      "2024-06-16",
+      "2024-08-04",
+      "2026-03-24",
+      "2026-06-16",
+      "2026-07-23"
+    ],
+    "policy": "Totals are preserved as reported; inconsistencies are flagged, never silently rewritten."
+  },
+  "nighttime_lights": {
+    "dataset": "Nighttime lights",
+    "rows": 5376,
+    "districts": 64,
+    "months": 84,
+    "date_min": "2019-01-01",
+    "date_max": "2025-12-01",
+    "duplicate_district_months": 0,
+    "post_padma_disagreements": 0,
+    "southwest_districts": [
+      "Bagerhat",
+      "Barguna",
+      "Barisal",
+      "Bhola",
+      "Chuadanga",
+      "Faridpur",
+      "Gopalganj",
+      "Jashore",
+      "Jhalakati",
+      "Jhenaidah",
+      "Khulna",
+      "Kushtia",
+      "Madaripur",
+      "Magura",
+      "Meherpur",
+      "Narail",
+      "Patuakhali",
+      "Pirojpur",
+      "Rajbari",
+      "Satkhira",
+      "Shariatpur"
+    ]
+  },
+  "daily_calendar_rows_after_reindex": 1521,
+  "complete_forecasting_rows": 1425,
+  "feature_count": 51,
+  "leakage_rule": "Every traffic/toll/Jamuna rolling or lag feature is shifted by at least one day."
+}

@@ -1,0 +1,88 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Wed, 02, Sep, 2026
+Time:                     21:00:20
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -9.04250
+Nobs:                     1499.00    HQIC:                  -9.17147
+Log likelihood:           2735.44    FPE:                9.63001e-05
+AIC:                     -9.24805    Det(Omega_mle):     9.26794e-05
+--------------------------------------------------------------------
+Results for equation padma_total_traffic
+===========================================================================================
+                              coefficient       std. error           t-stat            prob
+-------------------------------------------------------------------------------------------
+const                           -0.000315         0.003687           -0.085           0.932
+L1.padma_total_traffic          -0.107806         0.050012           -2.156           0.031
+L1.jamuna_total_traffic         -0.060748         0.054943           -1.106           0.269
+L2.padma_total_traffic          -0.330987         0.050083           -6.609           0.000
+L2.jamuna_total_traffic         -0.129700         0.055178           -2.351           0.019
+L3.padma_total_traffic          -0.071818         0.050931           -1.410           0.159
+L3.jamuna_total_traffic         -0.164003         0.056381           -2.909           0.004
+L4.padma_total_traffic          -0.167256         0.051466           -3.250           0.001
+L4.jamuna_total_traffic         -0.071855         0.058214           -1.234           0.217
+L5.padma_total_traffic          -0.061570         0.051219           -1.202           0.229
+L5.jamuna_total_traffic         -0.124617         0.060064           -2.075           0.038
+L6.padma_total_traffic           0.099240         0.050871            1.951           0.051
+L6.jamuna_total_traffic         -0.326154         0.061074           -5.340           0.000
+L7.padma_total_traffic           0.250534         0.050457            4.965           0.000
+L7.jamuna_total_traffic         -0.172490         0.061593           -2.800           0.005
+L8.padma_total_traffic          -0.054086         0.049750           -1.087           0.277
+L8.jamuna_total_traffic         -0.049186         0.060893           -0.808           0.419
+L9.padma_total_traffic          -0.010294         0.049278           -0.209           0.835
+L9.jamuna_total_traffic         -0.027032         0.059859           -0.452           0.652
+L10.padma_total_traffic         -0.154491         0.048862           -3.162           0.002
+L10.jamuna_total_traffic         0.081707         0.058115            1.406           0.160
+L11.padma_total_traffic         -0.028147         0.047989           -0.587           0.558
+L11.jamuna_total_traffic        -0.053234         0.055387           -0.961           0.336
+L12.padma_total_traffic         -0.191866         0.047528           -4.037           0.000
+L12.jamuna_total_traffic         0.114485         0.053657            2.134           0.033
+L13.padma_total_traffic         -0.069337         0.046332           -1.497           0.135
+L13.jamuna_total_traffic        -0.054109         0.052275           -1.035           0.301
+L14.padma_total_traffic          0.213973         0.046141            4.637           0.000
+L14.jamuna_total_traffic        -0.115927         0.051949           -2.232           0.026
+===========================================================================================
+
+Results for equation jamuna_total_traffic
+===========================================================================================
+                              coefficient       std. error           t-stat            prob
+-------------------------------------------------------------------------------------------
+const                           -0.000419         0.003377           -0.124           0.901
+L1.padma_total_traffic           0.073959         0.045801            1.615           0.106
+L1.jamuna_total_traffic         -0.233322         0.050317           -4.637           0.000
+L2.padma_total_traffic          -0.091475         0.045866           -1.994           0.046
+L2.jamuna_total_traffic         -0.352874         0.050532           -6.983           0.000
+L3.padma_total_traffic           0.110420         0.046642            2.367           0.018
+L3.jamuna_total_traffic         -0.414612         0.051634           -8.030           0.000
+L4.padma_total_traffic           0.102601         0.047132            2.177           0.029
+L4.jamuna_total_traffic         -0.423502         0.053312           -7.944           0.000
+L5.padma_total_traffic           0.141882         0.046906            3.025           0.002
+L5.jamuna_total_traffic         -0.449206         0.055006           -8.166           0.000
+L6.padma_total_traffic           0.225488         0.046587            4.840           0.000
+L6.jamuna_total_traffic         -0.534601         0.055931           -9.558           0.000
+L7.padma_total_traffic           0.169990         0.046208            3.679           0.000
+L7.jamuna_total_traffic         -0.265678         0.056406           -4.710           0.000
+L8.padma_total_traffic           0.030255         0.045561            0.664           0.507
+L8.jamuna_total_traffic         -0.256567         0.055765           -4.601           0.000
+L9.padma_total_traffic           0.154644         0.045129            3.427           0.001
+L9.jamuna_total_traffic         -0.277110         0.054818           -5.055           0.000
+L10.padma_total_traffic          0.010947         0.044747            0.245           0.807
+L10.jamuna_total_traffic        -0.117995         0.053222           -2.217           0.027
+L11.padma_total_traffic          0.087441         0.043948            1.990           0.047
+L11.jamuna_total_traffic        -0.177000         0.050723           -3.490           0.000
+L12.padma_total_traffic         -0.039513         0.043526           -0.908           0.364
+L12.jamuna_total_traffic        -0.036010         0.049139           -0.733           0.464
+L13.padma_total_traffic          0.058293         0.042430            1.374           0.169
+L13.jamuna_total_traffic        -0.160756         0.047873           -3.358           0.001
+L14.padma_total_traffic          0.092379         0.042255            2.186           0.029
+L14.jamuna_total_traffic        -0.020609         0.047575           -0.433           0.665
+===========================================================================================
+
+Correlation matrix of residuals
+                        padma_total_traffic  jamuna_total_traffic
+padma_total_traffic                1.000000              0.856670
+jamuna_total_traffic               0.856670              1.000000
+
+

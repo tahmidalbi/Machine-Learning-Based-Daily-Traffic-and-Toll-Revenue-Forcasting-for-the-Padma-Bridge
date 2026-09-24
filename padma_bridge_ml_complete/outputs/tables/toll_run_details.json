@@ -1,0 +1,208 @@
+{
+  "random_forest_best_params": {
+    "n_estimators": 800,
+    "min_samples_leaf": 4,
+    "max_samples": 1.0,
+    "max_features": 0.75,
+    "max_depth": null
+  },
+  "xgboost_best_params": {
+    "subsample": 0.85,
+    "reg_lambda": 1.0,
+    "n_estimators": 300,
+    "min_child_weight": 5,
+    "max_depth": 5,
+    "learning_rate": 0.015,
+    "colsample_bytree": 0.8
+  },
+  "residual_mlp": {
+    "seeds": [
+      1,
+      7,
+      42
+    ],
+    "final_epochs": 61
+  },
+  "sarimax": {
+    "best_order": [
+      1,
+      0,
+      1
+    ],
+    "best_seasonal_order": [
+      1,
+      0,
+      0,
+      7
+    ],
+    "candidates": [
+      {
+        "order": "(1, 0, 1)",
+        "seasonal_order": "(1, 0, 0, 7)",
+        "validation_mae": 1612455.268853924
+      },
+      {
+        "order": "(2, 0, 1)",
+        "seasonal_order": "(1, 0, 0, 7)",
+        "validation_mae": 2910942.603560837
+      },
+      {
+        "order": "(1, 1, 1)",
+        "seasonal_order": "(0, 0, 1, 7)",
+        "validation_mae": 1646497.9370636654
+      },
+      {
+        "order": "(2, 1, 1)",
+        "seasonal_order": "(1, 0, 0, 7)",
+        "validation_mae": 1654888.3829990309
+      }
+    ]
+  },
+  "split": {
+    "train": [
+      "2022-07-31",
+      "2025-04-22",
+      997
+    ],
+    "validation": [
+      "2025-04-23",
+      "2025-12-22",
+      214
+    ],
+    "test": [
+      "2025-12-23",
+      "2026-08-24",
+      214
+    ]
+  },
+  "validation_overall": [
+    {
+      "model": "LinearRegression",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1400543.81051444,
+      "RMSE": 2230167.1708557433,
+      "MAPE_pct": 5.847153088167444,
+      "R2": 0.7003892972156851
+    },
+    {
+      "model": "Persistence-1",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1938954.906542056,
+      "RMSE": 3235964.1473063123,
+      "MAPE_pct": 8.08100903535008,
+      "R2": 0.3692026084958081
+    },
+    {
+      "model": "RandomForest",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1238641.3201984654,
+      "RMSE": 2271815.313258515,
+      "MAPE_pct": 5.1471279861946035,
+      "R2": 0.6890944093680336
+    },
+    {
+      "model": "ResidualMLP",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1082469.9944288784,
+      "RMSE": 1746568.9538222495,
+      "MAPE_pct": 4.587740360088908,
+      "R2": 0.8162387406656749
+    },
+    {
+      "model": "SARIMAX",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1612455.268853924,
+      "RMSE": 2916919.729975188,
+      "MAPE_pct": 6.598240589927561,
+      "R2": 0.48745565953945114
+    },
+    {
+      "model": "Seasonal-7",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 2107181.7757009347,
+      "RMSE": 4392232.965239273,
+      "MAPE_pct": 8.005388924552435,
+      "R2": -0.16212600784217024
+    },
+    {
+      "model": "XGBoost",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1209455.5794392524,
+      "RMSE": 2138320.633757471,
+      "MAPE_pct": 5.033136575051225,
+      "R2": 0.7245592833149164
+    }
+  ],
+  "test_overall": [
+    {
+      "model": "LinearRegression",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 2119126.556088634,
+      "RMSE": 3789385.1949552908,
+      "MAPE_pct": 11.492328270199861,
+      "R2": 0.48319884004912184
+    },
+    {
+      "model": "Persistence-1",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 2319742.2897196263,
+      "RMSE": 4115617.3246041443,
+      "MAPE_pct": 12.382047524146072,
+      "R2": 0.39038457808105576
+    },
+    {
+      "model": "RandomForest",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1626156.5796926161,
+      "RMSE": 3039876.401933791,
+      "MAPE_pct": 9.746886469229823,
+      "R2": 0.6674187021147905
+    },
+    {
+      "model": "ResidualMLP",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1518816.9023650459,
+      "RMSE": 2997273.774699083,
+      "MAPE_pct": 9.47391930298704,
+      "R2": 0.6766753625602393
+    },
+    {
+      "model": "SARIMAX",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 2141258.5764459767,
+      "RMSE": 3647241.04696238,
+      "MAPE_pct": 11.549144087853607,
+      "R2": 0.5212432551179114
+    },
+    {
+      "model": "Seasonal-7",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 3517434.579439252,
+      "RMSE": 6184243.58819499,
+      "MAPE_pct": 15.901107148772306,
+      "R2": -0.37644590053614224
+    },
+    {
+      "model": "XGBoost",
+      "segment": "overall",
+      "n": 214,
+      "MAE": 1543935.5607476635,
+      "RMSE": 2918391.884858557,
+      "MAPE_pct": 9.560036135204154,
+      "R2": 0.6934698556189919
+    }
+  ]
+}
