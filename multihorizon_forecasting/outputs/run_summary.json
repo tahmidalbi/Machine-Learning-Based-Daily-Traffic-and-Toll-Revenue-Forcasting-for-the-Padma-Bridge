@@ -1,0 +1,12 @@
+{
+  "expanded_samples": 44265,
+  "features": 91,
+  "origin_split": {
+    "train_validation_end": "2026-01-11",
+    "test_origins": 224,
+    "test_start": "2026-01-11",
+    "test_end": "2026-08-23"
+  },
+  "leakage_policy": "All samples from one origin stay in one split; observed bridge values stop at the origin date.",
+  "weather_note": "Historical target-date weather is used for backtest evaluation; operational 8-30 day forecasts require forecasts or seasonal climatology."
+}

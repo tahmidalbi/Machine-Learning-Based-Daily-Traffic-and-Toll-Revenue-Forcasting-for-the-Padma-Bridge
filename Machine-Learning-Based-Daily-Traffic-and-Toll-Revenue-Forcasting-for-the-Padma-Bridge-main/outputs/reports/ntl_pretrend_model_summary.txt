@@ -1,0 +1,102 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               ntl_mean   R-squared:                       0.950
+Model:                            OLS   Adj. R-squared:                  0.948
+Method:                 Least Squares   F-statistic:                     293.3
+Date:                Wed, 02 Sep 2026   Prob (F-statistic):           4.19e-51
+Time:                        21:00:21   Log-Likelihood:                 474.31
+No. Observations:                2688   AIC:                            -794.6
+Df Residuals:                    2611   BIC:                            -340.6
+Df Model:                          76                                         
+Covariance Type:              cluster                                         
+=======================================================================================================
+                                          coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+Intercept                               0.1319      0.013     10.057      0.000       0.106       0.158
+C(district)[T.Bandarban]               -0.3256      0.038     -8.551      0.000      -0.400      -0.251
+C(district)[T.Barguna]                 -0.2058   6.68e-14  -3.08e+12      0.000      -0.206      -0.206
+C(district)[T.Barisal]                 -0.0836   6.74e-14  -1.24e+12      0.000      -0.084      -0.084
+C(district)[T.Bhola]                   -0.1369   6.69e-14  -2.05e+12      0.000      -0.137      -0.137
+C(district)[T.Bogura]                  -0.0066      0.038     -0.173      0.863      -0.081       0.068
+C(district)[T.Brahmanbaria]             0.2801      0.038      7.358      0.000       0.206       0.355
+C(district)[T.Chandpur]                -0.1464      0.038     -3.845      0.000      -0.221      -0.072
+C(district)[T.Chapainawabganj]         -0.1446      0.038     -3.798      0.000      -0.219      -0.070
+C(district)[T.Chittagong]               0.9966      0.038     26.177      0.000       0.922       1.071
+C(district)[T.Chuadanga]                0.0130   6.22e-14   2.09e+11      0.000       0.013       0.013
+C(district)[T.Cox's Bazar]              0.0447      0.038      1.175      0.240      -0.030       0.119
+C(district)[T.Cumilla]                  0.3445      0.038      9.049      0.000       0.270       0.419
+C(district)[T.Dhaka]                    5.3489      0.038    140.490      0.000       5.274       5.424
+C(district)[T.Dinajpur]                -0.0801      0.038     -2.103      0.035      -0.155      -0.005
+C(district)[T.Faridpur]                 0.0373   6.92e-14    5.4e+11      0.000       0.037       0.037
+C(district)[T.Feni]                     0.3192      0.038      8.383      0.000       0.245       0.394
+C(district)[T.Gaibandha]               -0.1906      0.038     -5.007      0.000      -0.265      -0.116
+C(district)[T.Gazipur]                  1.6362      0.038     42.975      0.000       1.562       1.711
+C(district)[T.Gopalganj]               -0.0839   6.69e-14  -1.25e+12      0.000      -0.084      -0.084
+C(district)[T.Habiganj]                 0.0647      0.038      1.700      0.089      -0.010       0.139
+C(district)[T.Jaipurhat]               -0.1148      0.038     -3.016      0.003      -0.189      -0.040
+C(district)[T.Jamalpur]                -0.1614      0.038     -4.240      0.000      -0.236      -0.087
+C(district)[T.Jashore]                  0.1336   6.78e-14   1.97e+12      0.000       0.134       0.134
+C(district)[T.Jhalakati]               -0.1541   6.65e-14  -2.32e+12      0.000      -0.154      -0.154
+C(district)[T.Jhenaidah]               -0.0698   6.72e-14  -1.04e+12      0.000      -0.070      -0.070
+C(district)[T.Khagrachari]             -0.2819      0.038     -7.404      0.000      -0.357      -0.207
+C(district)[T.Khulna]                   0.1642   6.83e-14    2.4e+12      0.000       0.164       0.164
+C(district)[T.Kishoreganj]             -0.1198      0.038     -3.147      0.002      -0.194      -0.045
+C(district)[T.Kurigram]                -0.1948      0.038     -5.116      0.000      -0.269      -0.120
+C(district)[T.Kushtia]                  0.1969   6.76e-14   2.91e+12      0.000       0.197       0.197
+C(district)[T.Lakshmipur]              -0.2013      0.038     -5.288      0.000      -0.276      -0.127
+C(district)[T.Lalmonirhat]              0.0835      0.038      2.192      0.028       0.009       0.158
+C(district)[T.Madaripur]               -0.0361   6.61e-14  -5.46e+11      0.000      -0.036      -0.036
+C(district)[T.Magura]                  -0.1158   6.77e-14  -1.71e+12      0.000      -0.116      -0.116
+C(district)[T.Manikganj]                0.0276      0.038      0.725      0.468      -0.047       0.102
+C(district)[T.Meherpur]                 0.0750   6.92e-14   1.08e+12      0.000       0.075       0.075
+C(district)[T.Moulvibazar]             -0.0996      0.038     -2.616      0.009      -0.174      -0.025
+C(district)[T.Munshiganj]               0.5835      0.038     15.325      0.000       0.509       0.658
+C(district)[T.Mymensingh]               0.0736      0.038      1.933      0.053      -0.001       0.148
+C(district)[T.Naogaon]                 -0.2202      0.038     -5.784      0.000      -0.295      -0.146
+C(district)[T.Narail]                  -0.1598   6.65e-14   -2.4e+12      0.000      -0.160      -0.160
+C(district)[T.Narayanganj]              3.8615      0.038    101.423      0.000       3.787       3.936
+C(district)[T.Narsingdi]                0.5351      0.038     14.055      0.000       0.460       0.610
+C(district)[T.Natore]                  -0.1271      0.038     -3.340      0.001      -0.202      -0.053
+C(district)[T.Netrakona]               -0.2559      0.038     -6.720      0.000      -0.330      -0.181
+C(district)[T.Nilphamari]              -0.0331      0.038     -0.870      0.384      -0.108       0.041
+C(district)[T.Noakhali]                -0.1362      0.038     -3.578      0.000      -0.211      -0.062
+C(district)[T.Pabna]                    0.1288      0.038      3.384      0.001       0.054       0.203
+C(district)[T.Panchagarh]               0.0037      0.038      0.096      0.923      -0.071       0.078
+C(district)[T.Parbattya Chattagram]    -0.3223      0.038     -8.465      0.000      -0.397      -0.248
+C(district)[T.Patuakhali]              -0.1269   6.93e-14  -1.83e+12      0.000      -0.127      -0.127
+C(district)[T.Pirojpur]                -0.1950   6.69e-14  -2.91e+12      0.000      -0.195      -0.195
+C(district)[T.Rajbari]                 -0.0687   6.78e-14  -1.01e+12      0.000      -0.069      -0.069
+C(district)[T.Rajshahi]                -0.0293      0.038     -0.770      0.441      -0.104       0.045
+C(district)[T.Rangpur]                  0.0015      0.038      0.039      0.969      -0.073       0.076
+C(district)[T.Satkhira]                -0.0676   6.65e-14  -1.02e+12      0.000      -0.068      -0.068
+C(district)[T.Shariatpur]              -0.0825   6.55e-14  -1.26e+12      0.000      -0.083      -0.083
+C(district)[T.Sherpur]                 -0.0689      0.038     -1.811      0.070      -0.144       0.006
+C(district)[T.Sirajganj]               -0.0568      0.038     -1.492      0.136      -0.131       0.018
+C(district)[T.Sunamganj]               -0.2864      0.038     -7.522      0.000      -0.361      -0.212
+C(district)[T.Sylhet]                   0.0961      0.038      2.525      0.012       0.022       0.171
+C(district)[T.Tangail]                  0.0503      0.038      1.320      0.187      -0.024       0.125
+C(district)[T.Thakurgaon]              -0.1120      0.038     -2.941      0.003      -0.187      -0.037
+C(month_of_year)[T.10]                 -0.0799      0.031     -2.542      0.011      -0.142      -0.018
+C(month_of_year)[T.11]                 -0.0475      0.019     -2.476      0.013      -0.085      -0.010
+C(month_of_year)[T.12]                 -0.0340      0.009     -3.687      0.000      -0.052      -0.016
+C(month_of_year)[T.2]                   0.0606      0.006      9.800      0.000       0.048       0.073
+C(month_of_year)[T.3]                   0.1161      0.008     13.673      0.000       0.100       0.133
+C(month_of_year)[T.4]                   0.0811      0.014      5.958      0.000       0.054       0.108
+C(month_of_year)[T.5]                   0.0888      0.017      5.200      0.000       0.055       0.122
+C(month_of_year)[T.6]                   0.0406      0.016      2.548      0.011       0.009       0.072
+C(month_of_year)[T.7]                  -0.0933      0.020     -4.554      0.000      -0.133      -0.053
+C(month_of_year)[T.8]                  -0.0811      0.021     -3.817      0.000      -0.123      -0.039
+C(month_of_year)[T.9]                  -0.0259      0.020     -1.321      0.187      -0.064       0.013
+time_index                              0.0097      0.002      5.607      0.000       0.006       0.013
+southwest_group:time_index             -0.0046      0.002     -2.582      0.010      -0.008      -0.001
+==============================================================================
+Omnibus:                     1472.492   Durbin-Watson:                   1.603
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           118908.569
+Skew:                           1.724   Prob(JB):                         0.00
+Kurtosis:                      35.400   Cond. No.                     1.78e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.78e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

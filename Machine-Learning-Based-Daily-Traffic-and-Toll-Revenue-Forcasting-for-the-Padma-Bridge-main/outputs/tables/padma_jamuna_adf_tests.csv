@@ -1,0 +1,5 @@
+series,transformation,ADF_statistic,p_value,used_lag,n
+padma_total_traffic,log_level,-5.842288338634591,3.7529313542867973e-07,21,1492
+padma_total_traffic,log_first_difference,-10.967335523709318,8.041589364113909e-20,21,1491
+jamuna_total_traffic,log_level,-5.207606268536396,8.483096477104834e-06,21,1492
+jamuna_total_traffic,log_first_difference,-9.630749469626982,1.6147120438682374e-16,20,1492

@@ -1,0 +1,13 @@
+{
+  "source": "C:\\Users\\albit\\Downloads\\Machine Learning Project\\padma_bridge_ml_complete\\data\\raw\\padma_toll_report_with_holidays_weather.csv",
+  "rows_modelled": 1492,
+  "features": 151,
+  "split": {
+    "train_validation_rows": 1268,
+    "test_rows": 224,
+    "test_start": "2026-01-12",
+    "test_end": "2026-08-24"
+  },
+  "leakage_policy": "All observed traffic, toll, share and rolling features shifted >=1 day.",
+  "note": "Total-and-share test comparison uses published test-day totals to isolate share allocation accuracy; deployment requires a separately forecast total."
+}
